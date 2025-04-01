@@ -1,148 +1,144 @@
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <script
-      src="https://kit.fontawesome.com/e5b96c1b3d.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- personal -->
-    <div>
-      <p class="title">Alex Gui</p>
-      <ul>
-        <li>
-          <i class="fas fa-phone"></i>
-          <a href="https://api.whatsapp.com/send?phone=6586800388"
-            >&nbsp;+6586800388</a
-          >
-        </li>
-        <li>
-          <i class="fas fa-envelope"></i
-          ><a href="mailto:xnmalex@gmail.com">&nbsp;xnmalex@gmail.com</a>
-        </li>
-        <li>
-          <i class="fab fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/alexgui1/"
-            >&nbsp;https://www.linkedin.com/in/alexgui1/</a
-          >
-        </li>
-      </ul>
-    </div>
-    <!-- portfolio-->
-    <div>
-      <h1>2019</h1>
-      <div class="portfolioContainer">
-        <h3>Lexmarrymi</h3>
-        <a class="sample"
-          >Developed my own wedding reception APP using QR code using React
-          Native</a
-        >
-        <p>Status: Removed from Google Play Store</p>
-        <div class="screenshot">
-          <img src="assets/lexmarrymi/1.webp" />
-          <img src="assets/lexmarrymi/2.webp" />
-          <img src="assets/lexmarrymi/3.webp" />
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Gui | Mobile & Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 0.5rem;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2 {
+      color: #0f172a;
+    }
+    .project, .contact, .about {
+      background: white;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.25rem 0;
+      }
+      .container {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gui Wai Siong (Alex)</h1>
+    <p>Mobile & Full Stack Developer | Kotlin, React, Python | AI Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/xnmalex" target="_blank">GitHub</a>
+      <a href="https://my.linkedin.com/in/alexgui1" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I’m a Singapore-based software engineer with over 10 years of experience in mobile (Android/Kotlin) and full stack (MERN) development. I’ve worked on fintech, banking, and AI hobby projects. Currently pursuing a Master's in Computer Science at Georgia Tech (Expected 2027).</p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+
+      <div class="project">
+        <img src="https://xnmalex.github.io/assets/okx-p2p.png" alt="OKX P2P Crypto Trading Module">
+        <h3>OKX P2P Crypto Trading Module</h3>
+        <p>Built P2P trading features in Kotlin (MVVM) for the OKX mobile app (Android/iOS). Collaborated with cross-functional teams in Agile Scrum sprints.</p>
       </div>
-      <h1>2018</h1>
-      <div class="portfolioContainer">
-        <h3>Flipbizz</h3>
-        <a class="sample"
-          >Developed the chat part of Android Flipbizz using Quickblox Chat
-          SDK</a
-        >
-        <p>Status: Revamped</p>
-        <div class="screenshot">
-          <img src="assets/flipbizz/1.png" />
-          <img src="assets/flipbizz/2.png" />
-        </div>
+
+      <div class="project">
+        <img src="https://xnmalex.github.io/assets/ai-chatbot.png" alt="AI WhatsApp Chatbot">
+        <h3>AI WhatsApp Chatbot</h3>
+        <p>Personal project using Flask + OpenAI API to simulate intelligent WhatsApp conversations. Explored conversational design and chatbot integrations.</p>
       </div>
-      <div class="portfolioContainer">
-        <h3>Notisboard</h3>
-        <a class="sample"
-          >Developed online notisboard using React Native. Only in beta stage
-        </a>
-        <p>Status: Unknown</p>
-        <div class="screenshot">
-          <img src="assets/notisboard/1.png" />
-          <img src="assets/notisboard/2.png" />
-          <img src="assets/notisboard/3.png" />
-        </div>
+
+      <div class="project">
+        <img src="https://xnmalex.github.io/assets/ai-trading-bot.png" alt="AI Trading Bot">
+        <h3>AI Trading Bot</h3>
+        <p>Python-based bot using Jupyter Notebook and technical indicators to simulate and test basic crypto trading strategies.</p>
       </div>
-      <!-- <div class="portfolioContainer">
-        <h3>Zona</h3>
-        <a class="sample"
-          >Developed the Indonesia e-commerce Android merchant app in React
-          Native
-        </a>
-        <p>Status: Unknown</p>
-        <div class="screenshot">
-          <img src="" />
-          <img src="" />
-          <img src="" />
-        </div>
-      </div> -->
-      <div class="portfolioContainer">
-        <h3>Draspter</h3>
-        <a class="sample"
-          >Developed the food delivery APP in Android for Australia startup.
-          Only till beta stage
-        </a>
-        <p>Status: Unpublished /Not Active</p>
-        <div class="screenshot">
-          <img src="assets/restaurant/1.png" />
-          <img src="assets/restaurant/2.png" />
-          <img src="assets/restaurant/3.png" />
-        </div>
+
+      <div class="project">
+        <img src="https://xnmalex.github.io/assets/citi-accessibility.png" alt="Citibank App Accessibility">
+        <h3>Citibank App Accessibility</h3>
+        <p>Implemented accessibility features for Citibank APAC Android app. Supported multiple markets including HK, AU, RU.</p>
       </div>
-      <div class="portfolioContainer">
-        <h3>Dinez-in</h3>
-        <a class="sample"
-          >Developed the social dining app. Only till beta stage
-        </a>
-        <p>Status: Revamped & Rebrand</p>
-        <div class="screenshot">
-          <img src="assets/dinezin/1.png" />
-          <img src="assets/dinezin/2.png" />
-          <img src="assets/dinezin/3.png" />
-        </div>
+
+      <div class="project">
+        <img src="https://xnmalex.github.io/assets/orion-react.png" alt="Orion React Native Platform">
+        <h3>Orion React Native Platform</h3>
+        <p>Led Android & React Native projects, handled CI/CD with Jenkins, integrated JPush SDK and CodePush for live updates.</p>
       </div>
-    </div>
-    <h1>2017</h1>
-    <div class="portfolioContainer">
-      <h3>Stockgem</h3>
-      <a class="sample">Developed the stock screener app</a>
-      <p>Status: Not Active</p>
-      <div class="screenshot">
-        <img src="assets/stockgem/1.png" />
-        <img src="assets/stockgem/2.png" />
-        <img src="assets/stockgem/3.png" />
-      </div>
-    </div>
-    <div class="portfolioContainer">
-      <h3>GE MPOS</h3>
-      <a class="sample"
-        >Developed the GE insurance app using Ionic, Angular JS</a
-      >
-      <p>Status: Active. Only in Ipad</p>
-      <div class="screenshot">
-        <img class="imgBanner" src="assets/mpos/1.png" />
-        <img class="imgBanner" src="assets/mpos/2.png" />
-        <img class="imgBanner" src="assets/mpos/3.png" />
-      </div>
-    </div>
-    <h1>2015-2016</h1>
-    <div class="portfolioContainer">
-      <h3>Seeties</h3>
-      <a class="sample">Developed the social media Android app like Yelp</a>
-      <p>Status: Not Active</p>
-      <div class="screenshot">
-        <img src="assets/seeties/1.png" />
-        <img src="assets/seeties/2.png" />
-        <img src="assets/seeties/3.png" />
-        <img src="assets/seeties/4.png" />
-      </div>
-    </div>
-  </body>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:xnmalex@gmail.com">xnmalex@gmail.com</a></p>
+      <p>Mobile: +65 8680 0388</p>
+      <p>Resume: <a href="https://github.com/xnmalex/resume/raw/main/Gui_Wai_Siong_Resume.docx" target="_blank">Download Resume</a></p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Gui Wai Siong (Alex) — Built with ❤️ using HTML & CSS
+  </footer>
+</body>
 </html>
